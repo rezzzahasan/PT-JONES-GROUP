@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #cc1010 0.0%, #eb7711 100.0%);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <AnchorPane layoutX="300.0" layoutY="31.0" prefHeight="338.0" prefWidth="267.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <PasswordField fx:id="tfPassword" blendMode="MULTIPLY" layoutX="16.0" layoutY="175.0" prefHeight="25.0" prefWidth="229.0" promptText="Password" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #cc1010 0.0%, #eb7711 100.0%);" />
+            <TextField fx:id="tfEmail" blendMode="MULTIPLY" layoutX="16.0" layoutY="137.0" prefHeight="25.0" prefWidth="229.0" promptText="Email" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #cc1010 0.0%, #eb7711 100.0%);" />
+            <Button layoutX="97.0" layoutY="227.0" mnemonicParsing="false" onAction="#btnLoginClicked" style="-fx-background-color: #f2f2f2;" text="Login">
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7982456088066101" green="0.06405674666166306" blue="0.06405674666166306" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9210526347160339" green="0.46621182560920715" blue="0.06822612136602402" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Javanese Text" size="15.0" />
+               </font></Button>
+            <Label layoutX="77.0" layoutY="39.0" text="Sign In">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7982456088066101" green="0.06405674666166306" blue="0.06405674666166306" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9210526347160339" green="0.46621182560920715" blue="0.06822612136602402" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Javanese Text" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="salah" contentDisplay="CENTER" layoutX="14.0" layoutY="281.0" prefHeight="17.0" prefWidth="243.0" textAlignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8157894611358643" green="0.04532163590192795" blue="0.04532163590192795" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8947368264198303" green="0.4481508433818817" blue="0.030376868322491646" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="52.0" text="PT. JONES GROUP" textFill="#fffdfd">
+         <font>
+            <Font name="Javanese Text" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="119.0" prefHeight="34.0" prefWidth="229.0" text="Mari Bergabung Bersama PT.Jones Group&#10;dan Jadikan Ternak Lele No.1 Sekompleks&#10;" textFill="WHITE" />
+      <Button layoutX="116.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnDaftarClicked" style="-fx-background-color: #f2f2f2;" text="Daftar Akun">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8333333134651184" green="0.028292180970311165" blue="0.028292180970311165" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9298245906829834" green="0.42081257700920105" blue="0.03156811743974686" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

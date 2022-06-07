@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #cc1010 0.0%, #eb7711 100.0%);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <TextField fx:id="NamaLengkap" layoutX="15.0" layoutY="88.0" prefHeight="25.0" prefWidth="289.0" promptText="Nama Lengkap " />
+      <DatePicker fx:id="TglLahir" layoutX="191.0" layoutY="122.0" prefHeight="25.0" prefWidth="109.0" promptText="Tgl. Lahir" />
+      <TextField fx:id="Tempat" layoutX="15.0" layoutY="122.0" prefHeight="25.0" prefWidth="165.0" promptText="Tempat" />
+      <TextField fx:id="Agama" layoutX="15.0" layoutY="184.0" prefHeight="25.0" prefWidth="289.0" promptText="Agama" />
+      <TextField fx:id="Alamat" layoutX="14.0" layoutY="218.0" prefHeight="25.0" prefWidth="437.0" promptText="Alamat (Sesuai KTP)" />
+      <TextField fx:id="nik" layoutX="14.0" layoutY="251.0" prefHeight="25.0" prefWidth="289.0" promptText="NIK" />
+      <Label layoutX="200.0" layoutY="14.0" prefHeight="43.0" prefWidth="174.0" text="Silahkan Isi Biodata Anda" textFill="WHITE">
+         <font>
+            <Font name="Javanese Text" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="461.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnKirim" prefHeight="25.0" prefWidth="59.0" text="Kirim">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7543859481811523" green="0.013970110565423965" blue="0.013970110565423965" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.36666667461395264" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="jeniskelamin" layoutX="15.0" layoutY="153.0" prefHeight="25.0" prefWidth="165.0" promptText="Jenis Kelamin" />
+   </children>
+</AnchorPane>
